@@ -3,3 +3,9 @@ build
 
 # Ignore gradle files
 .gradle
+
+# Ignore gradle wrappers
+gradle
+
+# Ignore idea files
+.idea
