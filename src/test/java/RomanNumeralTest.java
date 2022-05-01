@@ -1,0 +1,30 @@
+package com.ikarabulut;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class RomanNumeralTest {
+ 
+  @Test
+  public void makeSureJunitWorks() {
+    assertEquals(1, 1);
+  }
+  
+  @Test
+  public void oneShouldReturnI() {
+    RomanNumeral one = new RomanNumeral();
+    String conversion = one.converter(1);
+    assertEquals("I", conversion);
+  }
+
+  @Test
+  public void twoShouldReturnII() {
+    RomanNumeral roman = new RomanNumeral();
+    String conversion = roman.converter(2);
+    assertEquals("II", conversion);
+  }
+
+
+
+
+}
