@@ -24,6 +24,13 @@ public class RomanNumeralTest {
     assertEquals("II", conversion);
   }
 
+  @Test
+  public void fiveShouldReturnV() {
+    RomanNumeral roman = new RomanNumeral();
+    String conversion = roman.converter(5);
+    assertEquals("V", conversion);
+  }
+
 
 
 
