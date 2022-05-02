@@ -45,4 +45,46 @@ public class RomanNumeralTest {
     assertEquals("X", conversion);
   }
 
+  @Test
+  public void fifteenShouldReturnXV() {
+    RomanNumeral roman = new RomanNumeral();
+    String conversion = roman.converter(15);
+    assertEquals("XV", conversion);
+  }
+
+  @Test
+  public void fiftyShouldReturnL() {
+    RomanNumeral roman = new RomanNumeral();
+    String conversion = roman.converter(50);
+    assertEquals("L", conversion);
+  }
+
+  @Test
+  public void oneHundredShouldReturnC() {
+    RomanNumeral roman = new RomanNumeral();
+    String conversion = roman.converter(100);
+    assertEquals("C", conversion);
+  }
+
+  @Test
+  public void fiveHundredShouldReturnD() {
+    RomanNumeral roman = new RomanNumeral();
+    String conversion = roman.converter(500);
+    assertEquals("D", conversion);
+  }
+
+  @Test
+  public void oneThousandShouldReturnM() {
+    RomanNumeral roman = new RomanNumeral();
+    String conversion = roman.converter(1000);
+    assertEquals("M", conversion);
+  }
+
+
+
+
+
+
+
+
 }
