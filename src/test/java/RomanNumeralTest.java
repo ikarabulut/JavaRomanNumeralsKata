@@ -31,7 +31,18 @@ public class RomanNumeralTest {
     assertEquals("V", conversion);
   }
 
-
-
+  @Test
+  public void sevenShouldReturnVII() {
+    RomanNumeral roman = new RomanNumeral();
+    String conversion = roman.converter(7);
+    assertEquals("VII", conversion);
+  }
+  
+  @Test
+  public void tenShouldReturnX() {
+    RomanNumeral roman = new RomanNumeral();
+    String conversion = roman.converter(10);
+    assertEquals("X", conversion);
+  }
 
 }
